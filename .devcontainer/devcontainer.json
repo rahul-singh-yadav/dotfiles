@@ -1,0 +1,26 @@
+{
+    "name": "dev-env",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/cirolosapio/devcontainers-features/alpine-git:0": {},
+        "ghcr.io/cirolosapio/devcontainers-features/alpine-jq:0": {},
+        "ghcr.io/cirolosapio/devcontainers-features/alpine-aws-cli:0": {}
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.tabSize": 4
+            },
+            "extensions": [
+                "redhat.ansible",
+                "hashicorp.terraform",
+                "AmazonWebServices.aws-toolkit-vscode",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "remoteUser": "rahul",
+    "workspaceFolder": "/home/rahul"
+}

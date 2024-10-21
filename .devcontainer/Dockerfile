@@ -16,7 +16,7 @@ RUN mkdir -p /home/rahul/.ssh && \
 
 # Copy key
 # Ownsership & Permissions
-COPY ~/.ssh/github_auth_key* /home/rahul/.ssh
+COPY ./secret/github_auth_key* /home/rahul/.ssh
 RUN chown rahul:rahul /home/rahul/.ssh/github_auth_key* && \
     chmod 600 /home/rahul/.ssh/github_auth_key*
 

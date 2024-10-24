@@ -7,20 +7,14 @@ ENV USERNAME=zenbox \
 
 # Install necessary packages and create a non-root user with sudo privileges
 RUN apk add --no-cache \
-    zsh \
-    curl \
     git \
-    ansible \
-    pass \
-    gnupg \
-    openssh \
     sudo \
-    shadow && \
+    shadow \
+    openssh && \
     # Create a non-root user named 'zenbox' and grant sudo privileges
     useradd -m -G wheel $USERNAME && \
     echo "$USERNAME:$USERNAME" | chpasswd && \
     echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers && \
-    chsh -s /bin/zsh $USERNAME && \
     # Cleanup unnecessary files and cache
     rm -rf /var/cache/apk/* /tmp/*
 
@@ -34,4 +28,4 @@ RUN chmod +x /usr/local/bin/init.sh
 WORKDIR $USER_HOME
 
 # Set Zsh as the default shell for the container
-CMD ["zsh", "-l"]
+CMD ["/bin/bash"]

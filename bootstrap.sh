@@ -5,6 +5,10 @@ set -e
 
 echo "Starting bootstrap process..."
 
+# Step to make all shell scripts executable
+echo "Making all shell scripts executable..."
+find "$DOTFILES_DIR" -name "*.sh" -exec chmod +x {} \;
+
 # Step 1: Install necessary system packages
 echo "Installing system packages..."
 ./install/alpine-packages.sh

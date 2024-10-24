@@ -12,7 +12,6 @@ echo "Installing core system packages..."
 sudo apk add --no-cache \
     zsh \
     curl \
-    git \
     openssh-client \
     sudo \
     vim \

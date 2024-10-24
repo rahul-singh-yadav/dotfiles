@@ -1,0 +1,20 @@
+# User information
+[user]
+  name = Rahul Yadav
+  email = iam.rahul@outlook.com
+
+# Alias
+# Color settings
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+
+# Alias settings
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short

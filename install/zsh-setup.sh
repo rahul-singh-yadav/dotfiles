@@ -53,7 +53,7 @@ fi
 # Step 6: Set Zsh as the default shell (if it's not already the default)
 if [ "$SHELL" != "$(which zsh)" ]; then
     echo "Setting Zsh as the default shell..."
-    chsh -s $(which zsh) || echo "Unable to change default shell. Please do it manually."
+    chsh -s "$(which zsh)" || echo "Unable to change default shell. Please do it manually."
 else
     echo "Zsh is already the default shell."
 fi

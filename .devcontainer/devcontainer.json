@@ -18,12 +18,12 @@
             "extensions": [
                 "redhat.ansible",
                 "hashicorp.terraform",
-                "AmazonWebServices.aws-toolkit-vscode",
+                "amazonwebservices.aws-toolkit-vscode",
                 "ms-azuretools.vscode-docker"
             ]
         }
     }, 
     "workspaceFolder": "/home/zenbox",
-    "remoteUser": "zenbox",
-    "postCreateCommand": "/usr/local/bin/init.sh"    
+    "remoteUser": "zenbox"
+    // "postCreateCommand": "/usr/local/bin/init.sh"
 }

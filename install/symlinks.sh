@@ -39,4 +39,3 @@ for source in "${!SYMLINKS[@]}"; do
 done
 
 echo "Symlinks created successfully!"
-

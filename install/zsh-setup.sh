@@ -59,4 +59,3 @@ else
 fi
 
 echo "Zsh setup (with Oh My Zsh) completed successfully!"
-

@@ -1,5 +1,5 @@
 # Use Alpine as the base image
-FROM alpine:latest
+FROM FROM mcr.microsoft.com/devcontainers/base:alpine-3.20
 
 # Set environment variables
 ENV USERNAME=zenbox \

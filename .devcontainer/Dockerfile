@@ -29,3 +29,4 @@ WORKDIR $USER_HOME
 
 # Set Zsh as the default shell for the container
 ENTRYPOINT ["/bin/sh", "-c", "/usr/local/bin/init.sh || { echo 'Initialization failed, falling back to sh'; exec /bin/sh; } && exec /bin/zsh"]
+CMD [ "/bin/sh" ]

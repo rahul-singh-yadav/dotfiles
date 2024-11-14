@@ -24,6 +24,6 @@
         }
     }, 
     "workspaceFolder": "/home/zenbox",
-    "remoteUser": "zenbox",
-    "postCreateCommand": "/usr/local/bin/init.sh"
+    "remoteUser": "zenbox"
+    // "postCreateCommand": "/usr/local/bin/init.sh"
 }

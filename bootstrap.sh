@@ -26,4 +26,3 @@ echo "Setting up symbolic links..."
 ./install/symlinks.sh
 
 echo "Bootstrap process completed successfully!"
-

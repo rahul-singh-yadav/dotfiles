@@ -28,4 +28,4 @@ RUN chmod +x /usr/local/bin/init.sh
 WORKDIR $USER_HOME
 
 # Set Zsh as the default shell for the container
-CMD ["/bin/bash"]
+CMD ["/bin/zsh"]

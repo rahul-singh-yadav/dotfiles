@@ -28,5 +28,4 @@ RUN chmod +x /usr/local/bin/init.sh
 WORKDIR $USER_HOME
 
 # Set Zsh as the default shell for the container
-ENTRYPOINT [ "/usr/local/bin/init.sh" ]
-CMD ["/bin/zsh"]
+ENTRYPOINT ["/bin/sh", "-c", "/usr/local/bin/init.sh || { echo 'Initialization failed, falling back to sh'; exec /bin/sh; } && exec /bin/zsh"]

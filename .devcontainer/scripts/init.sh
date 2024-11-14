@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 # Function to check command success and print error message
 check_command() {

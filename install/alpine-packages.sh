@@ -14,12 +14,9 @@ echo "Installing core system packages..."
 # Install basic system utilities
 sudo apk add --no-cache \
     zsh \
-    curl \
     wget \
     openssh-client \
-    sudo \
     vim \
-    shadow \
     gnupg \
     pass
 

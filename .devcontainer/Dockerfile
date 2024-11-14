@@ -28,5 +28,7 @@ RUN chmod +x /usr/local/bin/init.sh
 # Set the working directory to the user's home directory
 WORKDIR $USER_HOME
 
+USER $USERNAME
+
 # Set Zsh as the default shell for the container
-ENTRYPOINT ["/bin/sh", "-c", "/usr/local/bin/init.sh"]
+ENTRYPOINT ["/bin/sh", "-c", "/bootstrap.sh"]

@@ -8,6 +8,7 @@ ENV USERNAME=zenbox \
 # Install necessary packages and create a non-root user with sudo privileges
 RUN apk add --no-cache \
     git \
+    curl \
     sudo \
     shadow \
     openssh && \
